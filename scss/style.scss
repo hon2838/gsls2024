@@ -28,7 +28,7 @@ $secondary: #e6e92f;
 }
 
 @mixin gradient-background(){
-	background: rgba(107,117,255,1);
+	background: rgb(243, 153, 8);
 	background: -moz-linear-gradient(45deg, rgba(107,117,255,1) 0%, rgba(107,117,255,1) 0%, rgba(89,183,255,1) 100%);
 	background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(107,117,255,1)), color-stop(0%, rgba(107,117,255,1)), color-stop(100%, rgba(89,183,255,1)));
 	background: -webkit-linear-gradient(45deg, rgba(107,117,255,1) 0%, rgba(107,117,255,1) 0%, rgba(89,183,255,1) 100%);
