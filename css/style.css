@@ -62,7 +62,13 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #fff; }
+  background-color: #f3f3f3;
+    background: url('images/Picture6.png') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+ }
 
 [tabindex="-1"]:focus {
   outline: 0 !important; }
