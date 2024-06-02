@@ -7384,11 +7384,11 @@ h1, h2, h3, h4, h5,
       display: inline-block;
       color: #fff; }
     .ftco-navbar-light .navbar-nav > .nav-item.cta > a:hover {
-      background: #6b76ff;
-      border: 1px solid #6b76ff; }
+      background: #gold;
+      border: 1px solid #gold; }
   .ftco-navbar-light .navbar-nav > .nav-item.cta.cta-colored a {
-    border: 1px solid #6b76ff;
-    background: #6b76ff !important; }
+    border: 1px solid #gold;
+    background: #gold !important; }
   .ftco-navbar-light .navbar-nav > .nav-item.active > a {
     color: rgba(0, 0, 0, 0.5); }
   .ftco-navbar-light .navbar-toggler {
@@ -7420,8 +7420,8 @@ h1, h2, h3, h4, h5,
     .ftco-navbar-light.scrolled .nav-item.active > a {
       color: #6b76ff !important; }
     .ftco-navbar-light.scrolled .nav-item.cta > a {
-      color: #fff !important;
-      background: #6b76ff;
+      color: #black !important;
+      background: gold;
       border: none !important;
       padding-top: 0.5rem !important;
       padding-bottom: .5rem !important;
@@ -7856,7 +7856,7 @@ h1, h2, h3, h4, h5,
 .block-7 {
   margin-bottom: 30px;
   padding: 30px;
-  background: rgb(178, 131, 75);
+  background: rgba(218, 165, 32, 0.7);
   -webkit-box-shadow: 0px 24px 48px -13px rgba(0, 0, 0, 0.05);
   -moz-box-shadow: 0px 24px 48px -13px rgba(0, 0, 0, 0.05);
   box-shadow: 0px 24px 48px -13px rgba(0, 0, 0, 0.05);
