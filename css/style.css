@@ -8114,7 +8114,7 @@ textarea.form-control {
   .ftco-footer .ftco-footer-widget ul li a {
     color: rgba(255, 255, 255, 0.4); }
     .ftco-footer .ftco-footer-widget ul li a span {
-      color: #fff; }
+      color: white; }
   .ftco-footer .ftco-footer-widget .btn-primary {
     background: #fff !important;
     border: 2px solid #fff !important; }
@@ -8518,9 +8518,9 @@ textarea.form-control {
   .block-23 ul li, .block-23 ul li > a {
     display: table;
     line-height: 1.5;
-    margin-bottom: 15px; }
+     }
   .block-23 ul li span {
-    color: rgba(255, 255, 255, 0.7); }
+    color: black; }
   .block-23 ul li .icon, .block-23 ul li .text {
     display: table-cell;
     vertical-align: top; }
