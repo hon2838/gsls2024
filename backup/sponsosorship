@@ -1,0 +1,58 @@
+  </div>
+      <div class="container mb-5">
+        <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-start " data-scrollax-parent="true">
+          <div class="col-xl-10 ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+            <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"> Global Student <br><span>Leadership Summit</span><br><span>2024</span></h1>
+            <p class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">September 08-14, 2024. Istanbul, Turkey</p>
+            <div id="timer" class="d-flex mb-3">
+						  <div class="time" id="days"></div>
+						  <div class="time pl-4" id="hours"></div>
+						  <div class="time pl-4" id="minutes"></div>
+						  <div class="time pl-4" id="seconds"></div>
+						</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <section class="ftco-section"
+		style="background-image: url('images/Picture6.webp'); background-size: cover; background-position: center;">
+		<div class="container">
+			<div class="row justify-content-center mb-3 pb-3">
+				<div class="col-md-7 text-center heading-section ftco-animate">
+					<span class="subheading">Sponsors</span>
+					<h2 class="mb-2">Sponsors</h2>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-md-3 ftco-animate">
+					<div class="work-entry">
+						<div class="text d-flex justify-content-center align-items-center">
+							<div class="p-4">
+								<img src="images/IMG_4830.webp" class="img-fluid" alt="Türkiye Embassy Malaysia">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 ftco-animate">
+					<div class="work-entry">
+						<div class="text d-flex justify-content-center align-items-center">
+							<div class="p-4 mt-5">
+								<img src="images/IMG_4833.webp" class="img-fluid" alt="RHB Bank">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 ftco-animate">
+					<div class="work-entry">
+						<div class="text d-flex justify-content-center align-items-center">
+							<div class="p-4 mt-4">
+								<img src="images/IMG_4835.webp" class="img-fluid" alt="Education Malaysia Global Services">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
