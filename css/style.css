@@ -46,10 +46,11 @@ html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
+  
   -ms-overflow-style: scrollbar;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
-@-ms-viewport {
+@viewport {
   width: device-width; }
 
 article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, section {
@@ -79,6 +80,10 @@ hr {
   box-sizing: content-box;
   height: 0;
   overflow: visible; }
+
+  target-element {
+    scroll-margin-top: 50px; /* Adjust this value as needed */
+  }
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
@@ -818,8 +823,7 @@ pre {
     -ms-flex-order: 5;
     order: 5; }
   .order-sm-6 {
-    -webkit-box-ordinal-group: 7;
-    -ms-flex-order: 6;
+    -webkit-box-ordinal-  /* Remove the @page rule */der: 6;
     order: 6; }
   .order-sm-7 {
     -webkit-box-ordinal-group: 8;
@@ -7718,7 +7722,7 @@ h1, h2, h3, h4, h5,
       font-weight: 700;
       position: relative;
       display: inline-block;
-      border: 1px solid black;
+      border: 1px solid #495057;
       background: rgb(178, 131, 75);
       width: 25%;
       -webkit-border-radius: 0;
@@ -7754,7 +7758,6 @@ h1, h2, h3, h4, h5,
         -webkit-transition: all 0.3s ease;
         -ms-transition: all 0.3s ease;
         transition: all 0.3s ease;
-        border: 1px solid black;
         background: goldenrod; }
         .ftco-search .nav-pills .nav-link.active:after {
           opacity: 1; }
