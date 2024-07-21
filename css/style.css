@@ -7780,16 +7780,18 @@ h1, h2, h3, h4, h5,
 .speaker-wrap {
   border: 2px solid #dba529;
   width: 100%;
-  height: 300px;
   background: #fffe;
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
-  transition: all 0.3s ease; }
+  transition: all 0.3s ease;}
   .speaker-wrap .speaker-img {
-    width: 270px;
-    height: 270px;
+    width: 270px; /* Fixed width */
+    height: 270px; /* Fixed height */
+    object-fit: cover; /* Cover the area without losing aspect ratio, can also use 'contain' to fit the whole image */
+    overflow: hidden; /* Prevents any overflow outside the container */
+    display: block; /* Ensures the image is treated as a block-level element, which can help with layout issues */
      }
   .speaker-wrap .text {
     width: calc(100% - 120px); }
@@ -7878,12 +7880,6 @@ h1, h2, h3, h4, h5,
   font-size: 24px;
   font-weight: 500;
   margin-bottom: 0; }
-
-.vertical-line {
-    height: 2px; /* Adjust the height to change the thickness of the line */
-    background-color: #000; /* Change the color as needed */
-    margin: 20px 0; /* Adjust spacing around the line */
-}
 
 .speaker .position {
   font-size: 15px; }
@@ -9046,6 +9042,12 @@ ul.timeline-list li:before {
 
   padding-bottom: 80px;
 
+}
+
+.uniform-size {
+  width: 200px; /* Example width */
+  height: 200px; /* Example height */
+  object-fit: cover; /* Cover the container without losing aspect ratio */
 }
 
 
