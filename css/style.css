@@ -9045,8 +9045,8 @@ ul.timeline-list li:before {
 }
 
 .uniform-size {
-  width: 200px; /* Example width */
-  height: 200px; /* Example height */
+  width: 250px; /* Example width */
+  height: auto; /* Example height */
   object-fit: cover; /* Cover the container without losing aspect ratio */
 }
 
@@ -9061,6 +9061,41 @@ ul.timeline-list li:before {
   border: 0;
 
 }
+
+.card{
+  height: 100%;
+}
+
+.bold-card-title {
+  font-weight: bolder;
+  margin-bottom: 1rem; /* Equivalent to mb-3 in Bootstrap */
+}
+
+.container-faq{
+  padding-top: 50px;
+}
+
+.card-faq{
+  border-color: #dba529;
+  border-width: 2px;
+}
+
+.card-faq:hover{
+  border-color: #dba529;
+  border-width: 2px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.btn-faq{
+  background-color: #dba529;
+  color:#000;
+}
+
+.btn-faq:hover{
+  background-color: #dba500;
+  color:#000;
+}
+
 
 @media screen and (max-width: 768px) {
   .speaker-text p {
@@ -9134,3 +9169,12 @@ ul.timeline-list li:before {
   100% {
     stroke-dasharray: 89, 200;
     stroke-dashoffset: -136px; } }
+
+
+    body {
+      background-image: url('../images/Picture6.webp');
+      background-repeat: repeat;
+      background-size: contain;
+      margin: 0; /* Remove default margin */
+      min-height: 100vh; /* Ensure full height */
+  }
