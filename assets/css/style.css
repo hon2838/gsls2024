@@ -1,0 +1,25 @@
+/*===========================================
+ * Common
+ *===========================================*/
+body,
+html {
+	margin:0;
+	padding:0;
+}
+body {
+	padding:50px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	text-align:center;
+	background-color: #f3f3f3;
+	background: url('images/Picture6.png') no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+/*===========================================
+ * Media
+ *===========================================*/
+@media only screen and (max-width: 1024px) {
+}
