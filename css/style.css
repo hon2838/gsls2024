@@ -65,7 +65,7 @@ body {
   color: #212529;
   text-align: left;
   background-color: #f3f3f3;
-  background: url('images/Picture6.png') no-repeat center center fixed; 
+  background: url('images/Picture6.webp') no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -3265,7 +3265,11 @@ input[type="button"].btn-block {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding: 0.5rem 1rem; }
-  .navbar > .container,
+  .navbar > .container,{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
   .navbar > .container-fluid {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3290,15 +3294,21 @@ input[type="button"].btn-block {
   .navbar-brand:hover, .navbar-brand:focus {
     text-decoration: none; }
 
+    .navbar-brand img {
+      max-width: 200px; /* Adjust as needed */
+      height: auto;
+    }
+
 .navbar-nav {
   display: -webkit-box;
   display: -ms-flexbox;
+  margin-left: auto;
   display: flex;
+  text-align: right;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding-left: 0;
   margin-bottom: 0;
   list-style: none; }
   .navbar-nav .nav-link {
@@ -3325,11 +3335,11 @@ input[type="button"].btn-block {
 
 .navbar-toggler {
   padding: 0.25rem 0.75rem;
+  margin-left: auto;
   font-size: 1.25rem;
   line-height: 1;
   background-color: transparent;
   color : rgb(0, 0, 0);
-
   border: 1px solid transparent;
   border-radius: 0.25rem; }
   .navbar-toggler:hover, .navbar-toggler:focus {
@@ -7376,6 +7386,7 @@ h1, h2, h3, h4, h5,
           display: none; } }
   .ftco-navbar-light .navbar-nav > .nav-item.cta > a {
     color: #gold;
+    margin-left: auto;
     border: 1px solid gold;
     padding-top: .5rem;
     padding-bottom: .5rem;
@@ -8158,7 +8169,7 @@ textarea.form-control {
     letter-spacing: .1em; }
   .ftco-footer .ftco-footer-widget h2 {
     font-weight: normal;
-    color: #fff;
+    color: black;
     margin-bottom: 40px;
     font-size: 20px;
     font-weight: 400; }
@@ -8181,7 +8192,7 @@ textarea.form-control {
   .ftco-footer .ftco-heading-2 {
     font-size: 17px;
     font-weight: 400;
-    color: #000000; }
+    color: black; }
 
 .ftco-footer-social li {
   list-style: none;
@@ -9078,6 +9089,7 @@ ul.timeline-list li:before {
 .card-faq{
   border-color: #dba529;
   border-width: 2px;
+  
 }
 
 .card-faq:hover{
@@ -9177,4 +9189,18 @@ ul.timeline-list li:before {
       background-size: contain;
       margin: 0; /* Remove default margin */
       min-height: 100vh; /* Ensure full height */
+  }
+
+  .oi--menu {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='%23000' d='M0 1v1h8V1zm0 2.97v1h8v-1zm0 3v1h8v-1z'/%3E%3C/svg%3E");
+    background-color: currentColor;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
   }

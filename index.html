@@ -23,7 +23,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
 	<link rel="stylesheet" href="css/magnific-popup.css">
 	<link rel="stylesheet" href="css/aos.css">
-	<link rel="stylesheet" href="css/ionicons.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css">
 	<link rel="stylesheet" href="css/bootstrap-datepicker.css">
 	<link rel="stylesheet" href="css/jquery.timepicker.css">
 	<link rel="stylesheet" href="css/flaticon.css">
@@ -32,15 +32,16 @@
 </head>
 
 <body>
-	<nav class="navbar navbar-expand-lg navbar-light ftco_navbar ftco-navbar-light ftco-navbar-dark navbar-dark mb-2" id="ftco-navbar">
-		<div class="container" >
-			<a class="navbar-brand" href="index.html" title="Home"><img src="images/png/GSLS24 - (Logo) Black.png" alt="GSLS 2024 Logo" width="50%" height="100%"></a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
-				aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation" >
-				<span class="oi oi-menu"></span> Menu
+	<nav class="navbar navbar-expand-lg navbar-light ftco_navbar ftco-navbar-light ftco-navbar-dark navbar-dark mb-2" id="ftco-navbar" style="display: flex; align-items: center; justify-content: space-between; width: 100%;">
+		<div class="container">
+			<a class="navbar-brand" href="index.html" title="Home">
+				<img src="images/png/GSLS24 - (Logo) Black.png" alt="GSLS 2024 Logo">
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="oi oi-menu" style="color: black;"></span> Menu
 			</button>
 			<div class="collapse navbar-collapse" id="ftco-nav">
-				<ul class="navbar-nav ml-auto">
+				<ul class="navbar-nav ml-auto text-right">
 					<li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
 					<li class="nav-item"><a href="#About" class="nav-link">About</a></li>
 					<li class="nav-item"><a href="#Speakers" class="nav-link">Speakers</a></li>
@@ -48,7 +49,8 @@
 					<li class="nav-item"><a href="#Packages" class="nav-link">Packages</a></li>
 					<li class="nav-item"><a href="#Contact" class="nav-link">Contact</a></li>
 					<li class="nav-item"><a href="#FAQ" class="nav-link">FAQ</a></li>
-					<li class="nav-item cta" style="display: flex; white-space: nowrap;"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfMFDCeYrsvQ--EhPVeH3xLAo9D6Vs6L_fQQ4zxohtFb1Dp-g/viewform" class="nav-link">Register Now</a></li>				</ul>
+					<li class="nav-item cta" style="display: flex; white-space: nowrap;"><a href="https://docs.google.com/forms/d/e/1FAIpQLSfMFDCeYrsvQ--EhPVeH3xLAo9D6Vs6L_fQQ4zxohtFb1Dp-g/viewform" class="nav-link">Register Now</a></li>
+				</ul>
 			</div>
 		</div>
 	</nav>
@@ -1047,7 +1049,7 @@
 			<div class="col text-center ftco-animate">
 				<span class="subheading mb-2">Location</span>
 				<h1>Location</h1>
-				<div class="map justify-content-center">
+				<div class="map justify-content-center mt-2">
 					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3010.5782384344247!2d28.959263077411627!3d41.012603671349886!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab98ddc3c6be3%3A0x4f51928bdbcd627a!2sIstanbul%20University!5e0!3m2!1sen!2smy!4v1718116489563!5m2!1sen!2smy"
 					 width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 				</div>
@@ -1088,14 +1090,12 @@
 				<div class="col-md">
 					<div class="ftco-footer-widget mb-4">
 						<h2 class="ftco-heading-2" style="color: black;">Our Contact</h2>
-						<div class="block-23">
-							<ul>
-								<li class ="mb-4 mt-3" style="display: flex; align-items: center; color:black;"><span class="icon icon-map-marker" style="margin-right: 10px;"></span><span class="text">Malaysia</span></li>
-								<li class ="mb-4" style="display: flex; align-items: center;"><a href="mailto:admin@gsls.my" style="display: flex; align-items: center;"><span class="icon icon-envelope" style="margin-right: 10px;"></span><span class="text" style ="color: black;">admin@gsls.my</span></a></li>
-								<li class ="mb-4" style="display: flex; align-items: center;"><a href="https://www.instagram.com/gsls24" style="display: flex; align-items: center;"><span class="icon-instagram" style="margin-right: 37px; color: white;"></span><span class="text" style ="color: black;">GSLS24</span></a></li>
-								<li  style="display: flex; align-items: center;"><a href="https://www.facebook.com/profile.php?id=100092521055559" style="display: flex; align-items: center;"><span class="icon-facebook" style="margin-right: 42px; color: white;"></span><span class="text" style ="color: black;">GSLS</span></a></li>
-							</ul>
-						</div>
+						<ul class="list-unstyled">
+							<li class ="mb-2"><span class="icon icon-map-marker" style="margin-right: 20px; color: black;"></span><span class="text" style ="color: black;">Malaysia</span></li>
+							<li><a href="mailto:admin@gsls.my" class="py-2 d-block"><span class="icon icon-envelope" style="margin-right: 20px; color: black;"></span><span class="text" style ="color: black;">admin@gsls.my</span></a></li>
+							<li><a href="https://www.facebook.com/profile.php?id=100092521055559" class="py-2 d-block" ><span class="icon-facebook" style="margin-right: 20px; color: black;"></span><span class="text" style ="color: black;">GSLS</span></a></li>
+							<li><a href="https://www.instagram.com/gsls24" class="py-2 d-block"><span class="icon-instagram" style="margin-right: 20px; color: black;"></span><span class="text" style ="color: black;">GSLS24</span></a></li>
+						</ul>
 					</div>
 				</div>
 			</div>

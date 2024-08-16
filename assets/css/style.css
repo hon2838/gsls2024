@@ -7,19 +7,37 @@ html {
 	padding:0;
 }
 body {
-	padding:50px;
 	font-family:Arial, Helvetica, sans-serif;
 	font-size:14px;
 	text-align:center;
 	background-color: #f3f3f3;
-	background: url('images/Picture6.png') no-repeat center center fixed; 
+	background: url('images/Picture6.webp') no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 }
-/*===========================================
- * Media
- *===========================================*/
-@media only screen and (max-width: 1024px) {
+#flipbook {
+	border: 2px solid #dba529;
+	height: 500px; /* Default height for all screen sizes */
 }
+
+/* Media queries for different screen sizes */
+@media screen and (max-width: 768px) {
+	#flipbook {
+		height: 600px; /* Height for screens up to 768px */
+	}
+}
+
+@media screen and (max-width: 576px) {
+	#flipbook {
+		height: 500px; /* Height for screens up to 576px */
+	}
+}
+
+@media screen and (max-width: 320px) {
+	#flipbook {
+		height: 400px; /* Height for screens up to 320px */
+	}
+}
+
