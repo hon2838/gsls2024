@@ -65,7 +65,11 @@ body {
   color: #212529;
   text-align: left;
   background-color: #f3f3f3;
-  background: url('images/Picture6.png') no-repeat center center fixed; 
+  background-image: url('../images/Picture6.webp');
+  background-repeat: repeat;
+  background-size: contain;
+  margin: 0; /* Remove default margin */
+  min-height: 100vh; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -3224,7 +3228,12 @@ input[type="button"].btn-block {
     border-top-right-radius: 0; }
 
 .nav-pills .nav-link {
-  border-radius: 0.25rem; }
+  border-radius: 0.25rem;
+ }
+
+ .custom-nav-pills .nav-link {
+  margin: 15px 0px; /* Adjust the value as needed */
+}
 
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
@@ -3266,6 +3275,11 @@ input[type="button"].btn-block {
   justify-content: space-between;
   padding: 0.5rem 1rem; }
   .navbar > .container,
+  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
   .navbar > .container-fluid {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3289,6 +3303,11 @@ input[type="button"].btn-block {
   white-space: nowrap; }
   .navbar-brand:hover, .navbar-brand:focus {
     text-decoration: none; }
+    .navbar-brand img {
+      max-width: 200px; /* Adjust as needed */
+      height: auto;
+    }
+
 
 .navbar-nav {
   display: -webkit-box;
@@ -4730,6 +4749,8 @@ button.close {
 
 .carousel-inner {
   position: relative;
+  border-color: #dba529;
+  border-width: 2px;
   width: 100%;
   overflow: hidden; }
 
@@ -7377,11 +7398,15 @@ h1, h2, h3, h4, h5,
   .ftco-navbar-light .navbar-nav > .nav-item.cta > a {
     color: #gold;
     border: 1px solid gold;
+    margin-left: auto;
     padding-top: .5rem;
     padding-bottom: .5rem;
     padding-left: 18px;
     padding-right: 18px;
     margin-top: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: gold;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
@@ -7435,6 +7460,9 @@ h1, h2, h3, h4, h5,
       padding-left: 20px !important;
       padding-right: 20px !important;
       margin-top: 6px !important;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       -webkit-border-radius: 5px;
       -moz-border-radius: 5px;
       -ms-border-radius: 5px;
@@ -7743,7 +7771,7 @@ h1, h2, h3, h4, h5,
         margin: 0 auto;
         border-style: solid;
         border-width: 10px 10px 0 10px;
-        border-color: #6b76ff transparent transparent transparent;
+        border-color: #dba529 transparent transparent transparent;
         opacity: 0; }
       .ftco-search .nav-pills .nav-link span {
         display: block;
@@ -7752,7 +7780,7 @@ h1, h2, h3, h4, h5,
         .ftco-search .nav-pills .nav-link {
           color: rgba(218 165 32); } }
       .ftco-search .nav-pills .nav-link:hover {
-        background: goldenrod;
+        background: #dba529;
         color: #fff; }
       .ftco-search .nav-pills .nav-link.active {
         color: #fff;
@@ -7761,7 +7789,7 @@ h1, h2, h3, h4, h5,
         -webkit-transition: all 0.3s ease;
         -ms-transition: all 0.3s ease;
         transition: all 0.3s ease;
-        background: goldenrod; }
+        background: #dba529; }
         .ftco-search .nav-pills .nav-link.active:after {
           opacity: 1; }
         @media (max-width: 767.98px) {
@@ -7780,43 +7808,71 @@ h1, h2, h3, h4, h5,
     margin-top: 15px; }
 
 .speaker-wrap {
-  border: 2px solid #dba529;
   width: 100%;
+  position: relative; /* Ensure the speaker-wrap is positioned relative to its normal position */
   background: #fffe;
+  border: 2px solid #dba529;
+  display: flex;
+  flex-direction: row; /* Default flex direction */
+  margin-bottom: 1rem;
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
   transition: all 0.3s ease;}
   .speaker-wrap .speaker-img {
+    background-image: url('../images/png/speakerbk.png');
+    background-size: cover; /* Ensure the background image covers the entire area */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat;
     width: 270px; /* Fixed width */
     height: 270px; /* Fixed height */
-    object-fit: cover; /* Cover the area without losing aspect ratio, can also use 'contain' to fit the whole image */
     overflow: hidden; /* Prevents any overflow outside the container */
     display: block; /* Ensures the image is treated as a block-level element, which can help with layout issues */
-     }
+    border-right: 2px solid #dba529;
+    }
+  .speaker-wrap .speaker-img img{
+    width: 100%; /* Ensure the image takes the full width of the parent */
+    height: 100%; /* Ensure the image takes the full height of the parent */
+    object-fit: cover; /* Cover the area without losing aspect ratio */
+    display: block;
+  }
   .speaker-wrap .text {
-    width: calc(100% - 120px); }
-    @media (max-width: 576px) {
-      .speaker-wrap .text h2 {
-        font-size: 24px;
+    width: calc(100% - 10px); }
+    @media (max-width: 992px) {
+      .speaker-wrap h2 {
+        font-size: 26px;
         font-weight: 700;
+        width: 100%;
+        padding: 10px; /* Adjust the padding value as needed */
+        box-sizing: border-box;
       }
+
+      .speaker-wrap {
+        flex-direction: column; /* Change flex direction to column */
+        align-items: center; /* Center align items */
+        display: flex;
     }
 
-    @media (min-width: 576px) and (max-width: 768px) {
-      .speaker-wrap .text h2 {
-        font-size: 28px;
-        font-weight: 700;
-      }
+    .speaker-wrap .speaker-img {
+        width: 100%; /* Make image container full width */
+        height: auto; /* Adjust height automatically */
+        border-right: none; /* Remove right border */
+        border-bottom: 2px solid #dba529; /* Add bottom border */
     }
 
-    @media (min-width: 768px) and (max-width: 992px) {
-      .speaker-wrap .text h2 {
-        font-size: 32px;
-        font-weight: 700;
-      }
+    .text {
+        padding-left: 0;
+        margin-top: 1rem;
+        margin-left: 0;
+        text-align: center; /* Center align text */
+        width: 100%;
+        padding: 10px; /* Adjust the padding value as needed */
+        box-sizing: border-box;
     }
+
+    }
+
 
     @media (min-width: 992px) {
       .speaker-wrap .text h2 {
@@ -7854,9 +7910,9 @@ h1, h2, h3, h4, h5,
       }
     }
   .speaker-wrap:hover, .speaker-wrap:focus {
-    -webkit-box-shadow: 0px 7px 15px -5px rgba(0, 0, 0, 0.07);
-    -moz-box-shadow: 0px 7px 15px -5px rgba(0, 0, 0, 0.07);
-    box-shadow: 0px 7px 15px -5px rgba(0, 0, 0, 0.07); }
+    -webkit-box-shadow: 0px 10px 20px -5px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 10px 20px -5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 10px 20px -5px rgba(0, 0, 0, 0.1); }
 
 .speaker .text {
   position: relative; }
@@ -9052,16 +9108,10 @@ ul.timeline-list li:before {
   object-fit: cover; /* Cover the container without losing aspect ratio */
 }
 
-
-
 .map iframe {
-
   width: 100%;
-
   height: 600px;
-
   border: 0;
-
 }
 
 .card{
@@ -9080,17 +9130,20 @@ ul.timeline-list li:before {
 .card-faq{
   border-color: #dba529;
   border-width: 2px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
 }
 
 .card-faq:hover{
   border-color: #dba529;
   border-width: 2px;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
 }
 
 .btn-faq{
   background-color: #dba529;
   color:#000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .btn-faq:hover{
@@ -9224,5 +9277,35 @@ ul.timeline-list li:before {
     }
   }
 
-
+  #countdown-timer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .countdown-item {
+    font-size: 2rem;
+    padding: 10px;
+    background: #f8f9fa;
+    border: 2px solid #dba529;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .countdown-item .number {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  
+  .countdown-item .label {
+    font-size: 1.5rem;
+  }
+  
+  .countdown-item .left-text {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-left: 5px;
+  }
   
