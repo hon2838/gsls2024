@@ -7839,7 +7839,7 @@ h1, h2, h3, h4, h5,
   }
   .speaker-wrap .text {
     width: calc(100% - 10px); }
-    @media (max-width: 992px) {
+    @media (max-width: 1068px) {
       .speaker-wrap h2 {
         font-size: 26px;
         font-weight: 700;
@@ -7882,6 +7882,7 @@ h1, h2, h3, h4, h5,
     }
     .speaker-wrap .text h3.speaker-name {
       font-size: 20px; }
+
     @media (max-width: 576px) {
       .speaker-wrap .text .position {
         font-size: 16px;
@@ -7909,6 +7910,8 @@ h1, h2, h3, h4, h5,
         color: black;
       }
     }
+
+    
   .speaker-wrap:hover, .speaker-wrap:focus {
     -webkit-box-shadow: 0px 10px 20px -5px rgba(0, 0, 0, 0.1);
     -moz-box-shadow: 0px 10px 20px -5px rgba(0, 0, 0, 0.1);
@@ -9281,16 +9284,17 @@ ul.timeline-list li:before {
     display: flex;
     justify-content: center;
     gap: 10px;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
   }
   
   .countdown-item {
     font-size: 2rem;
     padding: 10px;
     background: #f8f9fa;
-    border: 2px solid #dba529;
     border-radius: 5px;
     display: flex;
     align-items: center;
+    flex-direction: column; /* Stack number and label vertically */
   }
   
   .countdown-item .number {
@@ -9309,3 +9313,57 @@ ul.timeline-list li:before {
     margin-left: 5px;
   }
   
+  /* Responsive adjustments */
+  @media (max-width: 576px) {
+    .countdown-item {
+      font-size: 1.5rem;
+      padding: 5px;
+    }
+  
+    .countdown-item .number {
+      font-size: 2rem;
+    }
+  
+    .countdown-item .label,
+    .countdown-item .left-text {
+      font-size: 1.2rem;
+    }
+  }
+  
+  @media (min-width: 576px) and (max-width: 768px) {
+    #countdown-timer {
+      flex-wrap: nowrap; /* Prevent wrapping */
+    }
+  
+    .countdown-item {
+      font-size: 1.5rem;
+      padding: 5px;
+    }
+  
+    .countdown-item .number {
+      font-size: 2rem;
+    }
+  
+    .countdown-item .label,
+    .countdown-item .left-text {
+      font-size: 1.2rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .countdown-item {
+      font-size: 1.5rem;
+      padding: 5px;
+    }
+  
+    .countdown-item .number {
+      font-size: 2rem;
+    }
+  
+    .countdown-item .label,
+    .countdown-item .left-text {
+      font-size: 1.2rem;
+    }
+  }
+
+
