@@ -50,9 +50,6 @@ html {
   -ms-overflow-style: scrollbar;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
-@viewport {
-  width: device-width; }
-
 article, aside, dialog, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block; }
 
@@ -95,7 +92,9 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   margin-top: 0;
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  color: black;
+ }
 
 abbr[title],
 abbr[data-original-title] {
@@ -826,9 +825,11 @@ pre {
     -webkit-box-ordinal-group: 6;
     -ms-flex-order: 5;
     order: 5; }
-  .order-sm-6 {
-    -webkit-box-ordinal-  /* Remove the @page rule */der: 6;
-    order: 6; }
+    .order-sm-6 {
+      -webkit-box-ordinal-group: 7;
+      -ms-flex-order: 6;
+      order: 6;
+    }
   .order-sm-7 {
     -webkit-box-ordinal-group: 8;
     -ms-flex-order: 7;
@@ -3260,26 +3261,28 @@ input[type="button"].btn-block {
 .tab-content > .active {
   display: block; }
 
-.navbar {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  padding: 0.5rem 1rem; }
-  .navbar > .container,
-  {
+  .navbar {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+  }
+  
+  .navbar > .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
+  
   .navbar > .container-fluid {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3291,7 +3294,8 @@ input[type="button"].btn-block {
     align-items: center;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-between; }
+    justify-content: space-between;
+  }
 
 .navbar-brand {
   display: inline-block;
@@ -6704,19 +6708,20 @@ button.bg-dark:focus {
   .px-md-4 {
     padding-left: 1.5rem !important; }
   .p-md-5 {
-    padding: 3rem !important; }
+    padding: 1rem !important; }
   .pt-md-5,
   .py-md-5 {
-    padding-top: 3rem !important; }
+    padding-top: 2rem !important; }
   .pr-md-5,
   .px-md-5 {
-    padding-right: 3rem !important; }
+    padding-right: 2rem !important; }
   .pb-md-5,
   .py-md-5 {
-    padding-bottom: 3rem !important; }
+    padding-bottom: 2rem !important; }
   .pl-md-5,
   .px-md-5 {
-    padding-left: 3rem !important; }
+    padding-left: 1rem !important;
+    padding-right: 1rem !important; }
   .m-md-auto {
     margin: auto !important; }
   .mt-md-auto,
@@ -7305,10 +7310,10 @@ a.text-dark:hover, a.text-dark:focus {
 body {
   font-family: "Work Sans", Arial, sans-serif;
   background: #fff;
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.8;
   font-weight: 400;
-  color: #999999; }
+  color: black; }
   body.menu-show {
     overflow: hidden;
     position: fixed;
@@ -7396,7 +7401,6 @@ h1, h2, h3, h4, h5,
         .ftco-navbar-light .navbar-nav > .nav-item.ftco-seperator:before {
           display: none; } }
   .ftco-navbar-light .navbar-nav > .nav-item.cta > a {
-    color: #gold;
     border: 1px solid gold;
     margin-left: auto;
     padding-top: .5rem;
@@ -7416,11 +7420,11 @@ h1, h2, h3, h4, h5,
       display: inline-block;
       color: #fff; }
     .ftco-navbar-light .navbar-nav > .nav-item.cta > a:hover {
-      background: #gold;
-      border: 1px solid #gold; }
+      background: #dba500;
+      border: 1px solid gold; }
   .ftco-navbar-light .navbar-nav > .nav-item.cta.cta-colored a {
-    border: 1px solid #gold;
-    background: #gold !important; }
+    border: 1px solid gold;
+    background: gold !important; }
   .ftco-navbar-light .navbar-nav > .nav-item.active > a {
     color: rgba(0, 0, 0, 0.5); }
   .ftco-navbar-light .navbar-toggler {
@@ -7452,7 +7456,7 @@ h1, h2, h3, h4, h5,
     .ftco-navbar-light.scrolled .nav-item.active > a {
       color: #6b76ff !important; }
     .ftco-navbar-light.scrolled .nav-item.cta > a {
-      color: #black !important;
+      color: black !important;
       background: gold;
       border: none !important;
       padding-top: 0.5rem !important;
@@ -7748,9 +7752,8 @@ h1, h2, h3, h4, h5,
       padding: 35px 30px !important;
       border-radius: 0;
       margin-bottom: 0;
-      color: #black;
-      font-size: 22px;
-      font-weight: 700;
+      font-size: 24px;
+      font-weight: 800;
       position: relative;
       display: inline-block;
       border: 2px solid #dba529;
@@ -7825,7 +7828,7 @@ h1, h2, h3, h4, h5,
     background-size: cover; /* Ensure the background image covers the entire area */
     background-position: center; /* Center the background image */
     background-repeat: no-repeat;
-    width: 270px; /* Fixed width */
+    width: 340px; /* Fixed width */
     height: 270px; /* Fixed height */
     overflow: hidden; /* Prevents any overflow outside the container */
     display: block; /* Ensures the image is treated as a block-level element, which can help with layout issues */
@@ -9366,4 +9369,122 @@ ul.timeline-list li:before {
     }
   }
 
+  .speaker-wrap-new {
+    width: 100%;
+    position: relative; /* Ensure the speaker-wrap-new is positioned relative to its normal position */
+    background: #fffe;
+    border: 2px solid #dba529;
+    display: flex;
+    flex-direction: row; /* Default flex direction */
+    margin-bottom: 1rem;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;}
+    .speaker-wrap-new .speaker-img {
+      background-image: url('../images/png/speakerbk.png');
+      background-size: cover; /* Ensure the background image covers the entire area */
+      background-position: center; /* Center the background image */
+      background-repeat: no-repeat;
+      overflow: hidden; /* Prevents any overflow outside the container */
+      display: block; /* Ensures the image is treated as a block-level element, which can help with layout issues */
+      border-right: 2px solid #dba529;
+      }
+    .speaker-wrap-new .speaker-img img{
+      width: 100%; /* Ensure the image takes the full width of the parent */
+      height: 100%; /* Ensure the image takes the full height of the parent */
+      object-fit: cover; /* Cover the area without losing aspect ratio */
+      display: block;
+    }
+    .speaker-wrap-new .text {
+      width: calc(100% - 10px); }
+      @media (max-width: 1068px) {
+        .speaker-wrap-new h2 {
+          font-size: 26px;
+          font-weight: 700;
+          width: 100%;
+          padding: 10px; /* Adjust the padding value as needed */
+          box-sizing: border-box;
+        }
+  
+        .speaker-wrap-new {
+          flex-direction: column; /* Change flex direction to column */
+          align-items: center; /* Center align items */
+          display: flex;
+      }
+  
+      .speaker-wrap-new .speaker-img {
+          width: 100%; /* Make image container full width */
+          height: auto; /* Adjust height automatically */
+          border-right: none; /* Remove right border */
+          border-bottom: 2px solid #dba529; /* Add bottom border */
+      }
+  
+      .text {
+          padding-left: 0;
+          margin-top: 1rem;
+          margin-left: 0;
+          text-align: center; /* Center align text */
+          width: 100%;
+          padding: 10px; /* Adjust the padding value as needed */
+          box-sizing: border-box;
+      }
+  
+      }
+  
+  
+      @media (min-width: 992px) {
+        .speaker-wrap-new .text h2 {
+          font-size: 36px;
+          font-weight: 700;
+        }
+      }
+      .speaker-wrap-new .text h3.speaker-name {
+        font-size: 20px; }
+  
+      @media (max-width: 576px) {
+        .speaker-wrap-new .text .position {
+          font-size: 16px;
+          color: black;
+        }
+      }
+  
+      @media (min-width: 576px) and (max-width: 768px) {
+        .speaker-wrap-new .text .position {
+          font-size: 18px;
+          color: black;
+        }
+      }
+  
+      @media (min-width: 768px) and (max-width: 992px) {
+        .speaker-wrap-new .text .position {
+          font-size: 20px;
+          color: black;
+        }
+      }
+  
+      @media (min-width: 992px) {
+        .speaker-wrap-new .text .position {
+          font-size: 22px;
+          color: black;
+        }
+        .speaker-wrap-new .img img {
+          height: 100%;
+          width: 100%; /* Maintain aspect ratio */
+          object-fit: cover; /* Ensure the image covers the div */
+        }
+        .speaker-wrap-new .speaker-img {
+          width: 35%; /* Limit the image width to 35% of the parent div */
+        }
+        .speaker-wrap-new .text {
+          width: 65%; /* Adjust the text width to take the remaining space */
+        }
+      }
+  
+      
+    .speaker-wrap-new:hover, .speaker-wrap-new:focus {
+      -webkit-box-shadow: 0px 10px 20px -5px rgba(0, 0, 0, 0.1);
+      -moz-box-shadow: 0px 10px 20px -5px rgba(0, 0, 0, 0.1);
+      box-shadow: 0px 10px 20px -5px rgba(0, 0, 0, 0.1); }
 
