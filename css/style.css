@@ -9390,12 +9390,14 @@ ul.timeline-list li:before {
       overflow: hidden; /* Prevents any overflow outside the container */
       display: block; /* Ensures the image is treated as a block-level element, which can help with layout issues */
       border-right: 2px solid #dba529;
+      border: 2px solid #dba529;
       }
     .speaker-wrap-new .speaker-img img{
       width: 100%; /* Ensure the image takes the full width of the parent */
       height: 100%; /* Ensure the image takes the full height of the parent */
       object-fit: cover; /* Cover the area without losing aspect ratio */
       display: block;
+
     }
     .speaker-wrap-new .text {
       width: calc(100% - 10px); }
@@ -9418,7 +9420,7 @@ ul.timeline-list li:before {
           width: 100%; /* Make image container full width */
           height: auto; /* Adjust height automatically */
           border-right: none; /* Remove right border */
-          border-bottom: 2px solid #dba529; /* Add bottom border */
+          border-bottom: 3px solid #dba529; /* Add bottom border */
       }
   
       .text {
