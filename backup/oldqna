@@ -1,0 +1,122 @@
+<div class="col-md-6 col-lg-4 mb-4">
+				<div class="card card-faq">
+					<div class="card-body">
+						<h6 class="card-title bold-card-title mb-3 text text-center">What is the requirements for every participants to present their paper?</h6>
+						<p class="card-text text-center">
+							It is a mandatory for each participants to submit Abstract, Full Paper and Presentation Slides
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-6 col-lg-4 mb-4">
+				<div class="card card-faq">
+					<div class="card-body">
+						<h6 class="card-title bold-card-title mb-3 text text-center"> When is the due date for every documents needed? 
+						</h6>
+						<p class="card-text text-center">
+							Based on our timeline stated on the posters.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-6 col-lg-4 mb-4">
+				<div class="card card-faq">
+					<div class="card-body">
+						<h6 class="card-title bold-card-title mb-3 text text-center"> Which platform is used to submit all the documents?
+						</h6>
+						<p class="card-text text-center">
+							Paper Presentation Email.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-6 col-lg-4 mb-4">
+				<div class="card card-faq">
+					<div class="card-body">
+						<h6 class="card-title bold-card-title mb-3 text text-center">If theres any problems regarding paper presentation which platforms can the participants reach by?
+						</h6>
+						<p class="card-text text-center">Paper Presentation Email.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-6 col-lg-4 mb-4">
+				<div class="card card-faq">
+					<div class="card-body">
+						<h6 class="card-title bold-card-title mb-3 text text-center">What are the benefits of presenting paper in this Global Students Leadership Summit? </h6>
+						<p class="card-text text-center">
+							Your Paper will be published.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-6 col-lg-4 mb-4">
+				<div class="card card-faq">
+					<div class="card-body">
+						<h6 class="card-title bold-card-title mb-3 text text-center text-center">How long does it takes for our paper to be publish? </h6>
+						<p class="card-text text-center">
+							In discussion.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-6 col-lg-4 mb-4">
+				<div class="card card-faq">
+					<div class="card-body">
+						<h6 class="card-title bold-card-title mb-3 text text-center">Is there any specific format for the Manuscript Abstract and Presentation Slides? </h6>
+						<p class="card-text text-center">
+							Yes, you can refer them from the link below
+						</p>
+						<a href="https://drive.google.com/file/d/1KY-s4MED5-m3DTGvwF8g1aUCVamHaBb0/view?usp=sharing" target="_blank" class="btn btn-faq align-content-center" rel="noopener">View Format</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-6 col-lg-4 mb-4">
+				<div class="card card-faq">
+					<div class="card-body">
+						<h6 class="card-title bold-card-title mb-3 text text-center">How many presenter can present during summit?</h6>
+						<p class="card-text text-center">
+							One person only.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-6 col-lg-4 mb-4">
+				<div class="card card-faq">
+					<div class="card-body">
+						<h6 class="card-title bold-card-title mb-3 text text-center">Is there any awards given to the outstanding paper presenters?</h6>
+						<p class="card-text text-center">
+							Yes, Best Presenter of each hall and The Overall Best Presenter of the Summit.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-6 col-lg-4 mb-4">
+				<div class="card card-faq">
+					<div class="card-body">
+						<h6 class="card-title bold-card-title mb-3 text text-center">How much time is given for each presenter to present? </h6>
+						<p class="card-text text-center">
+							7 Minutes.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-6 col-lg-4 mb-4">
+				<div class="card card-faq"> 
+					<div class="card-body">
+						<h6 class="card-title bold-card-title mb-3 text text-center">How can we know that our topic is accepted for this summit?</h6>
+						<p class="card-text text-center">
+							Notification of approval will be sent through email.
+						</p>
+					</div>
+				</div>
+			</div>
