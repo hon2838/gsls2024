@@ -56,3 +56,59 @@
 			</div>
 		</div>
 	</section>
+
+
+	<div class="speaker-wrap ftco-animate d-flex mb-3">
+		<div class="img speaker-img">
+			<img src="https://aslennereli.com/wp-content/uploads/2018/10/zeynep-yildiz-1528779392.jpg" alt="Encik Zulkifli Bin Che Hussin">
+		</div>
+		<div class="text pl-md-5 mt-4 ml-3">
+			<h2>HE Zeynep Yıldız </a></h2>
+			<span class="position"><strong>Deputy</strong> <br>Ankara (II) Constituency <br>Grand National Assembly</span>
+			<span class="position"><br>Turkiye</span>
+		</div>
+	</div>
+
+	<div class="speaker-wrap ftco-animate d-flex mb-3">
+		<div class="img speaker-img">
+			<img src="https://admin.biyografya.com/_docs/photos/20d3503aea2901dc2f8c4cdd5eb2361a.jpg" alt="Encik Zulkifli Bin Che Hussin">
+		</div>
+		<div class="text pl-md-5 mt-4 ml-3">
+			<h2>HE Rümeysa Kadak</a></h2>
+			<span class="position"><strong>Deputy</strong> <br>Istanbul (III) Constituency<br>Grand National Assembly</span>
+			<span class="position"><br>Turkiye</span>
+		</div>
+	</div>
+
+
+	<div class="speaker-wrap-new ftco-animate d-flex">
+		<div class="img speaker-img">
+			<img src="https://aslennereli.com/wp-content/uploads/2018/10/zeynep-yildiz-1528779392.jpg" alt="Paper Presentation Session 1">
+		</div>
+		<div class="text pl-md-5" style="padding-top: 10px;">
+			<span class="time">1130 hrs</span>
+			<h2>Invited Speaker 4</h2>
+			<p>Speaker:
+				<br>
+				HE Zeynep Yıldız 
+				<br>
+				Grand National Assembly of Turkiye (Turkish Parliament)
+			</p>
+		</div>
+	</div>
+
+	<div class="speaker-wrap-new ftco-animate d-flex">
+		<div class="img speaker-img">
+			<img src="https://admin.biyografya.com/_docs/photos/20d3503aea2901dc2f8c4cdd5eb2361a.jpg" alt="Paper Presentation Session 1">
+		</div>
+		<div class="text pl-md-5" style="padding-top: 10px;">
+			<span class="time">1200 hrs</span>
+			<h2>Invited Speaker 5</h2>
+			<p>Speaker:
+				<br>
+				HE Rümeysa Kadak
+				<br>
+				Grand National Assembly of Turkiye (Turkish Parliament)
+			</p>
+		</div>
+	</div>
